@@ -18,7 +18,7 @@ export default siteConfig({
 
   // social usernames (optional)
   twitter: 'fxxxchao',
-  youtube: 'fxxxchao', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  youtube: '@fxxxchao', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
   github: 'fxxxchao',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
