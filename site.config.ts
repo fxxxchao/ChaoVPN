@@ -11,14 +11,14 @@ export default siteConfig({
   // basic site info (required)
   name: 'Next.js Notion Starter Kit',
   domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'fxxxchao',
+  author: 'ChaoVPN',
 
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
 
   // social usernames (optional)
-  twitter: 'fxxxchao',
-  github: 'fxxxchao',
+  twitter: 'anyconnect',
+  github: '',
   // youtube: '@fxxxchao', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
@@ -50,14 +50,18 @@ export default siteConfig({
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
   // navigationStyle: 'default'
-  navigationStyle: 'custom',
+  navigationStyle: 'default',
   navigationLinks: [
     {
-      title: 'About',
+      title: '账号购买',
+      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    },
+    {
+      title: '客户端下载',
       pageId: 'f1199d37579b41cbabfc0b5174f4256a'
     },
     {
-      title: 'Contact',
+      title: '使用指南',
       pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
     }
   ]
