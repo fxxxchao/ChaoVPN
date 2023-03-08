@@ -9,17 +9,16 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  name: 'ChaoVPN',
+  domain: 'https://www.chaovpn.com',
   author: 'ChaoVPN',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'ChaoVPN-AnyConnect不限速不限流',
 
   // social usernames (optional)
   twitter: 'anyconnect',
-  github: '',
-  // youtube: '@fxxxchao', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  // youtube: '@', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
 
@@ -50,7 +49,7 @@ export default siteConfig({
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
   // navigationStyle: 'default'
-  navigationStyle: 'custom',
+  navigationStyle: 'default',
   navigationLinks: [
     {
       title: '购买账号',
