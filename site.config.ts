@@ -53,11 +53,11 @@ export default siteConfig({
   navigationStyle: 'default',
   navigationLinks: [
     {
-      title: '账号购买',
+      title: '购买账号',
       pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
     },
     {
-      title: '客户端下载',
+      title: '下载客户端',
       pageId: 'f1199d37579b41cbabfc0b5174f4256a'
     },
     {
