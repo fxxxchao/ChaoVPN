@@ -54,11 +54,11 @@ export default siteConfig({
   navigationLinks: [
     {
       title: '购买账号',
-      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+      pageId: 'ee08ffbc792d48b696cd4ca8665dc881'
     },
     {
       title: '使用指南',
-      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+      pageId: '6d7ce145188b40d3824283d2e4061f36'
     }
   ]
 })
