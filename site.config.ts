@@ -57,10 +57,6 @@ export default siteConfig({
       pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
     },
     {
-      title: '下载客户端',
-      pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-    },
-    {
       title: '使用指南',
       pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
     }
