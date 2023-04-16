@@ -14,6 +14,8 @@ export const PageHead: React.FC<
   }
 > = ({ site, title, description, pageId, image, url }) => {
   const rssFeedUrl = `${config.host}/feed`
+  const htmlCode = '<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d2624086-8c0f-4076-aec2-a099afd44d4d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>';
+
 
   title = title ?? site?.name
   description = description ?? site?.description
@@ -79,6 +81,11 @@ export const PageHead: React.FC<
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
+
+      dangerouslySetInnerHTML={{
+        __html: htmlCode,
+      }}
+      
     </Head>
   )
 }
