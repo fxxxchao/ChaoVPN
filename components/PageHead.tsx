@@ -82,9 +82,11 @@ export const PageHead: React.FC<
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
 
+      <div
       dangerouslySetInnerHTML={{
         __html: htmlCode,
       }}
+    />
       
     </Head>
   )
