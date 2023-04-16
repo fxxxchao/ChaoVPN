@@ -78,15 +78,15 @@ export const PageHead: React.FC<
         title={site?.name}
       />
 
+      <div
+        dangerouslySetInnerHTML={{
+          __html: htmlCode,
+        }}
+      />
+
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
-
-      <div
-      dangerouslySetInnerHTML={{
-        __html: htmlCode,
-      }}
-    />
       
     </Head>
   )
