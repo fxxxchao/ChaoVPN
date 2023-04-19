@@ -1,5 +1,7 @@
-import * as React from 'react'
-import Head from 'next/head'
+
+import React from 'react';
+import Head from 'next/head';
+
 
 import * as config from '@/lib/config'
 import * as types from '@/lib/types'
@@ -14,16 +16,23 @@ export const PageHead: React.FC<
   }
 > = ({ site, title, description, pageId, image, url }) => {
   const rssFeedUrl = `${config.host}/feed`
-  const htmlCode = '<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d2624086-8c0f-4076-aec2-a099afd44d4d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>';
-
+  const htmlCode = `window.$crisp=[];window.CRISP_WEBSITE_ID="d2624086-8c0f-4076-aec2-a099afd44d4d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`;
 
   title = title ?? site?.name
   description = description ?? site?.description
 
   const socialImageUrl = getSocialImageUrl(pageId) || image
 
+  React.useEffect(() => {
+    const scriptTag = document.createElement('script');
+    scriptTag.type = 'text/javascript';
+    scriptTag.innerHTML = htmlCode;
+    document.head.appendChild(scriptTag);
+  }, []);
+
   return (
     <Head>
+
       <meta charSet='utf-8' />
       <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
       <meta
@@ -78,16 +87,11 @@ export const PageHead: React.FC<
         title={site?.name}
       />
 
-      <div
-        dangerouslySetInnerHTML={{
-          __html: htmlCode,
-        }}
-      />
-
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
       
     </Head>
+    
   )
 }
